@@ -14,7 +14,7 @@ import (
 	"fmt"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/dml/picture"
+	"github.com/vbatushev/gooxml/schema/soo/dml/picture"
 )
 
 type WdCT_WordprocessingCanvasChoice struct {

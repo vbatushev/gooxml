@@ -16,7 +16,7 @@ import (
 	"time"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/dml"
+	"github.com/vbatushev/gooxml/schema/soo/dml"
 )
 
 type CT_Comment struct {

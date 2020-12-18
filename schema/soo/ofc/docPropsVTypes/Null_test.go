@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/ofc/docPropsVTypes"
+	"github.com/vbatushev/gooxml/schema/soo/ofc/docPropsVTypes"
 )
 
 func TestNullConstructor(t *testing.T) {

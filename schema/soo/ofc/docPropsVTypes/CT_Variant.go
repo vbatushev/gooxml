@@ -15,7 +15,7 @@ import (
 	"time"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/vbatushev/gooxml/schema/soo/ofc/sharedTypes"
 )
 
 type CT_Variant struct {

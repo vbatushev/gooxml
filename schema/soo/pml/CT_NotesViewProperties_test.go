@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/pml"
+	"github.com/vbatushev/gooxml/schema/soo/pml"
 )
 
 func TestCT_NotesViewPropertiesConstructor(t *testing.T) {

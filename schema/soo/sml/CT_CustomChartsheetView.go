@@ -15,7 +15,7 @@ import (
 	"strconv"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/vbatushev/gooxml/schema/soo/ofc/sharedTypes"
 )
 
 type CT_CustomChartsheetView struct {

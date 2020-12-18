@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/dml"
+	"github.com/vbatushev/gooxml/schema/soo/dml"
 )
 
 func TestCT_BevelConstructor(t *testing.T) {

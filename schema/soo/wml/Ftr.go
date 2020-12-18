@@ -13,7 +13,7 @@ import (
 	"encoding/xml"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/ofc/math"
+	"github.com/vbatushev/gooxml/schema/soo/ofc/math"
 )
 
 type Ftr struct {
