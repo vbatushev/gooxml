@@ -9,7 +9,7 @@ package chart
 
 import (
 	"github.com/carmel/gooxml"
-	crt "github.com/carmel/gooxml/schema/soo/dml/chart"
+	crt "github.com/vbatushev/gooxml/schema/soo/dml/chart"
 )
 
 type DataLabels struct {

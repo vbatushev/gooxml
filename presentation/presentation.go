@@ -22,13 +22,13 @@ import (
 	"strings"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/common"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/schema/soo/dml"
-	"github.com/carmel/gooxml/schema/soo/ofc/sharedTypes"
-	"github.com/carmel/gooxml/schema/soo/pkg/relationships"
-	"github.com/carmel/gooxml/schema/soo/pml"
-	"github.com/carmel/gooxml/zippkg"
+	"github.com/vbatushev/gooxml/common"
+	"github.com/vbatushev/gooxml/measurement"
+	"github.com/vbatushev/gooxml/schema/soo/dml"
+	"github.com/vbatushev/gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/vbatushev/gooxml/schema/soo/pkg/relationships"
+	"github.com/vbatushev/gooxml/schema/soo/pml"
+	"github.com/vbatushev/gooxml/zippkg"
 )
 
 // Presentation is the a presentation base document.

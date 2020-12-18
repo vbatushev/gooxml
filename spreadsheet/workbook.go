@@ -19,15 +19,15 @@ import (
 	"time"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/common"
-	"github.com/carmel/gooxml/vmldrawing"
-	"github.com/carmel/gooxml/zippkg"
+	"github.com/vbatushev/gooxml/common"
+	"github.com/vbatushev/gooxml/vmldrawing"
+	"github.com/vbatushev/gooxml/zippkg"
 
-	"github.com/carmel/gooxml/schema/soo/dml"
-	crt "github.com/carmel/gooxml/schema/soo/dml/chart"
-	sd "github.com/carmel/gooxml/schema/soo/dml/spreadsheetDrawing"
-	"github.com/carmel/gooxml/schema/soo/pkg/relationships"
-	"github.com/carmel/gooxml/schema/soo/sml"
+	"github.com/vbatushev/gooxml/schema/soo/dml"
+	crt "github.com/vbatushev/gooxml/schema/soo/dml/chart"
+	sd "github.com/vbatushev/gooxml/schema/soo/dml/spreadsheetDrawing"
+	"github.com/vbatushev/gooxml/schema/soo/pkg/relationships"
+	"github.com/vbatushev/gooxml/schema/soo/sml"
 )
 
 // ErrorNotFound is returned when something is not found

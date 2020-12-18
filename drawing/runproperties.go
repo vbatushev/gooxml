@@ -9,9 +9,9 @@ package drawing
 
 import (
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/color"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/schema/soo/dml"
+	"github.com/vbatushev/gooxml/color"
+	"github.com/vbatushev/gooxml/measurement"
+	"github.com/vbatushev/gooxml/schema/soo/dml"
 )
 
 // RunProperties controls the run properties.

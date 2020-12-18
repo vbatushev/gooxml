@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/pkg/relationships"
+	"github.com/vbatushev/gooxml/schema/soo/pkg/relationships"
 )
 
 // Relationships represents a .rels file.

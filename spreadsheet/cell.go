@@ -16,10 +16,10 @@ import (
 	"time"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/common"
-	"github.com/carmel/gooxml/schema/soo/sml"
-	"github.com/carmel/gooxml/spreadsheet/format"
-	"github.com/carmel/gooxml/spreadsheet/reference"
+	"github.com/vbatushev/gooxml/common"
+	"github.com/vbatushev/gooxml/schema/soo/sml"
+	"github.com/vbatushev/gooxml/spreadsheet/format"
+	"github.com/vbatushev/gooxml/spreadsheet/reference"
 )
 
 const iso8601Format = "2006-01-02T15:04:05Z07:00"

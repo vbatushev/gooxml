@@ -11,15 +11,15 @@ import (
 	"fmt"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/chart"
-	"github.com/carmel/gooxml/color"
-	"github.com/carmel/gooxml/common"
-	"github.com/carmel/gooxml/measurement"
+	"github.com/vbatushev/gooxml/chart"
+	"github.com/vbatushev/gooxml/color"
+	"github.com/vbatushev/gooxml/common"
+	"github.com/vbatushev/gooxml/measurement"
 
-	"github.com/carmel/gooxml/schema/soo/dml"
-	c "github.com/carmel/gooxml/schema/soo/dml/chart"
-	crt "github.com/carmel/gooxml/schema/soo/dml/chart"
-	sd "github.com/carmel/gooxml/schema/soo/dml/spreadsheetDrawing"
+	"github.com/vbatushev/gooxml/schema/soo/dml"
+	c "github.com/vbatushev/gooxml/schema/soo/dml/chart"
+	crt "github.com/vbatushev/gooxml/schema/soo/dml/chart"
+	sd "github.com/vbatushev/gooxml/schema/soo/dml/spreadsheetDrawing"
 )
 
 // Drawing is a drawing overlay on a sheet.  Only a single drawing is allowed

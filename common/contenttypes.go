@@ -11,7 +11,7 @@ import (
 	"strings"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/pkg/content_types"
+	"github.com/vbatushev/gooxml/schema/soo/pkg/content_types"
 )
 
 // ContentTypes is the top level "[Content_Types].xml" in a zip package.

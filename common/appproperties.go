@@ -13,7 +13,7 @@ import (
 	"strings"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/ofc/extended_properties"
+	"github.com/vbatushev/gooxml/schema/soo/ofc/extended_properties"
 )
 
 // AppProperties contains properties specific to the document and the

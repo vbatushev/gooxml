@@ -11,7 +11,7 @@ import (
 	"errors"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/sml"
+	"github.com/vbatushev/gooxml/schema/soo/sml"
 )
 
 // StyleSheet is a document style sheet.

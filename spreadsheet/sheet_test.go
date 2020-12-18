@@ -14,7 +14,7 @@ import (
 	"testing"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/spreadsheet"
+	"github.com/vbatushev/gooxml/spreadsheet"
 )
 
 func TestRowNumIncreases(t *testing.T) {

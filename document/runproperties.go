@@ -9,10 +9,10 @@ package document
 
 import (
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/color"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/schema/soo/ofc/sharedTypes"
-	"github.com/carmel/gooxml/schema/soo/wml"
+	"github.com/vbatushev/gooxml/color"
+	"github.com/vbatushev/gooxml/measurement"
+	"github.com/vbatushev/gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/vbatushev/gooxml/schema/soo/wml"
 )
 
 // RunProperties controls run styling properties

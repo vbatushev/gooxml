@@ -9,9 +9,9 @@ package spreadsheet
 
 import (
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/color"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/schema/soo/sml"
+	"github.com/vbatushev/gooxml/color"
+	"github.com/vbatushev/gooxml/measurement"
+	"github.com/vbatushev/gooxml/schema/soo/sml"
 )
 
 // RichTextRun is a segment of text within a cell that is directly formatted.

@@ -15,7 +15,7 @@ import (
 
 	"github.com/carmel/gooxml"
 
-	"github.com/carmel/gooxml/common"
+	"github.com/vbatushev/gooxml/common"
 )
 
 func TestNewAppDefaultProperties(t *testing.T) {

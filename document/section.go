@@ -11,8 +11,8 @@ import (
 	"log"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/schema/soo/wml"
+	"github.com/vbatushev/gooxml/measurement"
+	"github.com/vbatushev/gooxml/schema/soo/wml"
 )
 
 // Section is the beginning of a new section.

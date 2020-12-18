@@ -11,7 +11,7 @@ import (
 	"strings"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/sml"
+	"github.com/vbatushev/gooxml/schema/soo/sml"
 )
 
 // DataValidationList is just a view on a DataValidation configured as a list.

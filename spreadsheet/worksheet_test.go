@@ -14,10 +14,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/carmel/gooxml/schema/soo/sml"
-	"github.com/carmel/gooxml/spreadsheet"
-	"github.com/carmel/gooxml/testhelper"
-	"github.com/carmel/gooxml/zippkg"
+	"github.com/vbatushev/gooxml/schema/soo/sml"
+	"github.com/vbatushev/gooxml/spreadsheet"
+	"github.com/vbatushev/gooxml/testhelper"
+	"github.com/vbatushev/gooxml/zippkg"
 )
 
 func TestWorksheetUnmarshal(t *testing.T) {

@@ -7,8 +7,10 @@
 
 package chart
 
-import crt "github.com/carmel/gooxml/schema/soo/dml/chart"
-import "github.com/carmel/gooxml"
+import (
+	"github.com/carmel/gooxml"
+	crt "github.com/vbatushev/gooxml/schema/soo/dml/chart"
+)
 
 // PieChart is a Pie chart.
 type PieChart struct {

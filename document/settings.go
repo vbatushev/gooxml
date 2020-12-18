@@ -9,7 +9,7 @@ package document
 
 import (
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/wml"
+	"github.com/vbatushev/gooxml/schema/soo/wml"
 )
 
 // Settings controls the document settings.

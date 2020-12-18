@@ -11,9 +11,9 @@ import (
 	"fmt"
 
 	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/schema/soo/ofc/sharedTypes"
-	"github.com/carmel/gooxml/schema/soo/wml"
+	"github.com/vbatushev/gooxml/measurement"
+	"github.com/vbatushev/gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/vbatushev/gooxml/schema/soo/wml"
 )
 
 // ParagraphProperties are the properties for a paragraph.
