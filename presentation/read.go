@@ -11,7 +11,7 @@ import (
 	"archive/zip"
 	"fmt"
 	"io"
-	"io/ioutil"
+	"os"
 
 	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/zippkg"
@@ -21,7 +21,7 @@ import (
 func Read(r io.ReaderAt, size int64) (*Presentation, error) {
 	doc := newEmpty()
 
-	td, err := ioutil.TempDir("", "gooxml-pptx")
+	td, err := os.MkdirTemp("", "gooxml-pptx")
 	if err != nil {
 		return nil, err
 	}

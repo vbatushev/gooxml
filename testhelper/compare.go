@@ -14,7 +14,7 @@ import (
 	"encoding/xml"
 	"flag"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"os"
 	"os/exec"
@@ -29,11 +29,11 @@ var update = flag.Bool("test.update", false, "update golden file")
 func CompareGoldenXML(t *testing.T, expectedFn string, got []byte) {
 	golden := filepath.Join("testdata", expectedFn)
 	if *update {
-		if err := ioutil.WriteFile(golden, got, 0644); err != nil {
+		if err := os.WriteFile(golden, got, 0644); err != nil {
 			t.Fatal(err)
 		}
 	}
-	exp, err := ioutil.ReadFile(golden)
+	exp, err := os.ReadFile(golden)
 	if err != nil {
 		t.Fatalf("unable to read expected input: %s", err)
 	}
@@ -67,7 +67,7 @@ func CompareZip(t *testing.T, expectedFn string, got []byte, cmpFileContents boo
 func CompareGoldenZipFilesOnly(t *testing.T, expectedFn string, got []byte) {
 	golden := filepath.Join("testdata", expectedFn)
 	if *update {
-		if err := ioutil.WriteFile(golden, got, 0644); err != nil {
+		if err := os.WriteFile(golden, got, 0644); err != nil {
 			t.Fatal(err)
 		}
 	}
@@ -77,7 +77,7 @@ func CompareGoldenZipFilesOnly(t *testing.T, expectedFn string, got []byte) {
 func CompareGoldenZip(t *testing.T, expectedFn string, got []byte) {
 	golden := filepath.Join("testdata", expectedFn)
 	if *update {
-		if err := ioutil.WriteFile(golden, got, 0644); err != nil {
+		if err := os.WriteFile(golden, got, 0644); err != nil {
 			t.Fatal(err)
 		}
 	}
@@ -136,8 +136,8 @@ func compareFiles(exp, got *zip.File) func(t *testing.T) {
 		}
 		defer gf.Close()
 
-		expAll, _ := ioutil.ReadAll(ef)
-		gotAll, _ := ioutil.ReadAll(gf)
+		expAll, _ := io.ReadAll(ef)
+		gotAll, _ := io.ReadAll(gf)
 		if !bytes.Equal(expAll, gotAll) {
 			dumpXmlDiff(t, expAll, gotAll)
 			fmt.Println(string(expAll))
@@ -149,7 +149,7 @@ func compareFiles(exp, got *zip.File) func(t *testing.T) {
 }
 
 func tempFilePath(prefix string) string {
-	expF, _ := ioutil.TempFile("", prefix)
+	expF, _ := os.CreateTemp("", prefix)
 	defer expF.Close()
 	return expF.Name()
 }
@@ -177,9 +177,9 @@ func xmlIndentFile(fn string) error {
 
 func dumpXmlDiff(t *testing.T, exp, got []byte) {
 	expF := tempFilePath("expected")
-	ioutil.WriteFile(expF, exp, 0644)
+	os.WriteFile(expF, exp, 0644)
 	gotF := tempFilePath("got")
-	ioutil.WriteFile(gotF, got, 0644)
+	os.WriteFile(gotF, got, 0644)
 
 	xmlIndentFile(expF)
 	xmlIndentFile(gotF)
@@ -205,7 +205,7 @@ func dumpXmlDiff(t *testing.T, exp, got []byte) {
 	}
 
 	if err := diff.Wait(); err != nil {
-		errOutput, _ := ioutil.ReadAll(errp)
+		errOutput, _ := io.ReadAll(errp)
 		t.Fatalf("error waiting on xmlindent: %s [%s]", string(errOutput), err)
 	}
 }

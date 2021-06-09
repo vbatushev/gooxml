@@ -14,7 +14,6 @@ import (
 	"image"
 	"image/jpeg"
 	"io"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
@@ -503,7 +502,7 @@ func Read(r io.ReaderAt, size int64) (*Document, error) {
 	// numbering is not required
 	doc.Numbering.x = nil
 
-	td, err := ioutil.TempDir("", "gooxml-docx")
+	td, err := os.MkdirTemp("", "gooxml-docx")
 	if err != nil {
 		return nil, err
 	}

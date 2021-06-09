@@ -11,6 +11,7 @@ import (
 	"github.com/vbatushev/gooxml/schema/soo/wml"
 
 	"github.com/go-ole/go-ole/oleutil"
+	ole "github.com/go-ole/go-ole"
 )
 
 // NOTE: This example can only run on Windows and requires that Word be installed.

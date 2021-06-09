@@ -2,8 +2,8 @@
 package main
 
 import (
-	"io/ioutil"
 	"log"
+	"os"
 
 	"github.com/vbatushev/gooxml/common"
 	"github.com/vbatushev/gooxml/document"
@@ -21,7 +21,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("unable to create image: %s", err)
 	}
-	img2data, err := ioutil.ReadFile("gophercolor.png")
+	img2data, err := os.ReadFile("gophercolor.png")
 	if err != nil {
 		log.Fatalf("unable to read file: %s", err)
 	}
