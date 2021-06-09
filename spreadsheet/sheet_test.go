@@ -13,7 +13,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/spreadsheet"
 )
 

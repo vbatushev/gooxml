@@ -8,7 +8,7 @@
 package document
 
 import (
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/common"
 	"github.com/vbatushev/gooxml/measurement"
 	pic "github.com/vbatushev/gooxml/schema/soo/dml/picture"

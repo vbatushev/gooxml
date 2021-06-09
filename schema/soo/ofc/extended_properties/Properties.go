@@ -12,7 +12,7 @@ package extended_properties
 import (
 	"encoding/xml"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 )
 
 type Properties struct {

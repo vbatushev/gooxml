@@ -11,7 +11,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/common"
 	"github.com/vbatushev/gooxml/schema/soo/wml"
 )

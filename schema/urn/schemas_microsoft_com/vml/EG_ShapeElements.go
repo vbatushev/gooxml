@@ -12,7 +12,7 @@ package vml
 import (
 	"encoding/xml"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/schema/urn/schemas_microsoft_com/office/excel"
 	"github.com/vbatushev/gooxml/schema/urn/schemas_microsoft_com/office/powerpoint"
 	"github.com/vbatushev/gooxml/schema/urn/schemas_microsoft_com/office/word"

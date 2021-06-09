@@ -10,7 +10,7 @@ package presentation
 import (
 	"errors"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/drawing"
 	"github.com/vbatushev/gooxml/schema/soo/dml"
 	"github.com/vbatushev/gooxml/schema/soo/pml"

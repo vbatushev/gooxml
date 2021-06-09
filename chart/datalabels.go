@@ -8,7 +8,7 @@
 package chart
 
 import (
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	crt "github.com/vbatushev/gooxml/schema/soo/dml/chart"
 )
 

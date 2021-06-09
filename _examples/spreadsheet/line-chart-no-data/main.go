@@ -4,7 +4,7 @@ package main
 import (
 	"log"
 
-	"github.com/carmel/gooxml/spreadsheet"
+	"github.com/vbatushev/gooxml/spreadsheet"
 )
 
 func main() {

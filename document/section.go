@@ -10,7 +10,7 @@ package document
 import (
 	"log"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/measurement"
 	"github.com/vbatushev/gooxml/schema/soo/wml"
 )

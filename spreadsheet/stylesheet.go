@@ -10,7 +10,7 @@ package spreadsheet
 import (
 	"errors"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/schema/soo/sml"
 )
 

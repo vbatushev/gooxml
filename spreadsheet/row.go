@@ -10,7 +10,7 @@ package spreadsheet
 import (
 	"fmt"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/measurement"
 	"github.com/vbatushev/gooxml/schema/soo/sml"
 	"github.com/vbatushev/gooxml/spreadsheet/reference"

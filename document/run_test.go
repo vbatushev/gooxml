@@ -10,7 +10,7 @@ package document
 import (
 	"testing"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/schema/soo/ofc/sharedTypes"
 	"github.com/vbatushev/gooxml/schema/soo/wml"
 )

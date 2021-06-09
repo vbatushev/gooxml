@@ -10,7 +10,7 @@ package chart
 import (
 	"math/rand"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/color"
 	"github.com/vbatushev/gooxml/drawing"
 

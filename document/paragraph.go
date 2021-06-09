@@ -74,6 +74,15 @@ func (p Paragraph) SetStyle(s string) {
 	}
 }
 
+// GetText return text content of paragraph
+func (p Paragraph) GetText() string {
+	var content string
+	for _, r := range p.Runs() {
+		content += r.Text()
+	}
+	return content
+}
+
 // AddRun adds a run to a paragraph.
 func (p Paragraph) AddRun() Run {
 	pc := wml.NewEG_PContent()

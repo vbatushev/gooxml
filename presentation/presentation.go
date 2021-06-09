@@ -21,7 +21,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/common"
 	"github.com/vbatushev/gooxml/measurement"
 	"github.com/vbatushev/gooxml/schema/soo/dml"

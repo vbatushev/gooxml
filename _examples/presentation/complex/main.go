@@ -4,12 +4,12 @@ package main
 import (
 	"log"
 
-	"github.com/carmel/gooxml/schema/soo/dml"
+	"github.com/vbatushev/gooxml/schema/soo/dml"
 
-	"github.com/carmel/gooxml/color"
-	"github.com/carmel/gooxml/common"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/presentation"
+	"github.com/vbatushev/gooxml/color"
+	"github.com/vbatushev/gooxml/common"
+	"github.com/vbatushev/gooxml/measurement"
+	"github.com/vbatushev/gooxml/presentation"
 )
 
 const lorem = "Lorem ipsum dolor sit amet."

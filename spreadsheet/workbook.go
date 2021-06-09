@@ -18,7 +18,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/common"
 	"github.com/vbatushev/gooxml/vmldrawing"
 	"github.com/vbatushev/gooxml/zippkg"

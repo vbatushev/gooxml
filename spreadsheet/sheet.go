@@ -16,7 +16,7 @@ import (
 	"github.com/vbatushev/gooxml/spreadsheet/formula"
 	"github.com/vbatushev/gooxml/spreadsheet/reference"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/common"
 	"github.com/vbatushev/gooxml/schema/soo/sml"
 	"github.com/vbatushev/gooxml/vmldrawing"

@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/schema/soo/ofc/sharedTypes"
 	"github.com/vbatushev/gooxml/schema/urn/schemas_microsoft_com/office/excel"
 	"github.com/vbatushev/gooxml/schema/urn/schemas_microsoft_com/office/powerpoint"

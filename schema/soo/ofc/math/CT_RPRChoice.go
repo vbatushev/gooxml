@@ -12,7 +12,7 @@ package math
 import (
 	"encoding/xml"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 )
 
 type CT_RPRChoice struct {

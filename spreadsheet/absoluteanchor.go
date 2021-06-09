@@ -8,7 +8,7 @@
 package spreadsheet
 
 import (
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/measurement"
 	sd "github.com/vbatushev/gooxml/schema/soo/dml/spreadsheetDrawing"
 )

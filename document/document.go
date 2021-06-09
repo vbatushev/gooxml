@@ -19,7 +19,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/carmel/gooxml"
+	"github.com/vbatushev/gooxml"
 	"github.com/vbatushev/gooxml/common"
 	"github.com/vbatushev/gooxml/zippkg"
 
@@ -444,6 +444,18 @@ func (d *Document) Paragraphs() []Paragraph {
 		}
 	}
 	return ret
+}
+
+func (d *Document) GetParagaraphStyleName(p Paragraph) string {
+	if p.Style() == "" {
+		return ""
+	}
+	for _, s := range d.Styles.ParagraphStyles() {
+		if s.StyleID() == p.Style() {
+			return s.Name()
+		}
+	}
+	return ""
 }
 
 // SaveToFile writes the document out to a file.
