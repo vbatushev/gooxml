@@ -94,6 +94,20 @@ func (d *Document) X() *wml.Document {
 	return d.x
 }
 
+// HasFootnotes returns a bool based on the presence or abscence of footnotes within the document.
+func (d *Document) HasFootnotes() bool {
+	return d.footNotes != nil
+}
+
+// Footnotes returns the footnotes defined in the document.
+func (d *Document) Footnotes() []Footnote {
+	result := []Footnote{}
+	for _, footnote := range d.footNotes.CT_Footnotes.Footnote {
+		result = append(result, Footnote{d, footnote})
+	}
+	return result
+}
+
 // AddHeader creates a header associated with the document, but doesn't add it
 // to the document for display.
 func (d *Document) AddHeader() Header {

@@ -17,6 +17,12 @@ type Row struct {
 	x *wml.CT_Row
 }
 
+// Footnote - ...
+type Footnote struct {
+	d *Document
+	x *wml.CT_FtnEdn
+}
+
 // X returns the inner wrapped XML type.
 func (r Row) X() *wml.CT_Row {
 	return r.x

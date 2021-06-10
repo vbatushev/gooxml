@@ -253,3 +253,72 @@ func (p Paragraph) SetNumberingDefinitionByID(abstractNumberID int64) {
 	lvl.ValAttr = int64(abstractNumberID)
 	p.x.PPr.NumPr.NumId = lvl
 }
+
+// AddFootnote - ...
+func (p Paragraph) AddFootnote(text string) Footnote {
+	var _ddad int64
+	if p.d.HasFootnotes() {
+		for _, footnote := range p.d.Footnotes() {
+			if footnote.id() > _ddad {
+				_ddad = footnote.id()
+			}
+		}
+		_ddad++
+	} else {
+		_ddad = 0
+		p.d.footNotes = &wml.Footnotes{}
+		p.d.footNotes.CT_Footnotes = wml.CT_Footnotes{}
+		p.d.footNotes.Footnote = make([]*wml.CT_FtnEdn, 0)
+	}
+
+	ftnEdn := wml.NewCT_FtnEdn()
+	ftnEdnRef := wml.NewCT_FtnEdnRef()
+	ftnEdnRef.IdAttr = _ddad
+
+	p.d.footNotes.CT_Footnotes.Footnote = append(p.d.footNotes.CT_Footnotes.Footnote, ftnEdn)
+	r := p.AddRun()
+	runProps := r.Properties()
+	// Название стиля FootnoteAnchor
+	runProps.SetStyle("\u0046\u006f\u006f\u0074\u006e\u006f\u0074\u0065\u0041n\u0063\u0068\u006f\u0072")
+	r.x.EG_RunInnerContent = []*wml.EG_RunInnerContent{wml.NewEG_RunInnerContent()}
+	r.x.EG_RunInnerContent[0].FootnoteReference = ftnEdnRef
+	footnote := Footnote{p.d, ftnEdn}
+	footnote.x.IdAttr = _ddad
+	footnote.x.EG_BlockLevelElts = []*wml.EG_BlockLevelElts{wml.NewEG_BlockLevelElts()}
+	fnParagraph := footnote.AddParagraph()
+	// Название стиля Footnote
+	fnParagraph.Properties().SetStyle("\u0046\u006f\u006f\u0074\u006e\u006f\u0074\u0065")
+	fnParagraph.x.PPr.RPr = wml.NewCT_ParaRPr()
+	fnParagraphRun := fnParagraph.AddRun()
+	fnParagraphRun.AddTab()
+	fnParagraphRun.AddText(text)
+
+	return footnote
+}
+
+// AddParagraph adds a paragraph to the footnote.
+func (footnote Footnote) AddParagraph() Paragraph {
+	blockContent := wml.NewEG_ContentBlockContent()
+	blockContentLen := len(footnote.x.EG_BlockLevelElts[0].EG_ContentBlockContent)
+	footnote.x.EG_BlockLevelElts[0].EG_ContentBlockContent = append(footnote.x.EG_BlockLevelElts[0].EG_ContentBlockContent, blockContent)
+	ctP := wml.NewCT_P()
+	var ctStr *wml.CT_String
+	if blockContentLen != 0 {
+		blockContentPar := len(footnote.x.EG_BlockLevelElts[0].EG_ContentBlockContent[blockContentLen-1].P)
+		ctStr = footnote.x.EG_BlockLevelElts[0].EG_ContentBlockContent[blockContentLen-1].P[blockContentPar-1].PPr.PStyle
+	} else {
+		ctStr = wml.NewCT_String()
+		// Footnote
+		ctStr.ValAttr = "\u0046\u006f\u006f\u0074\u006e\u006f\u0074\u0065"
+	}
+	blockContent.P = append(blockContent.P, ctP)
+	paragraph := Paragraph{footnote.d, ctP}
+	paragraph.x.PPr = wml.NewCT_PPr()
+	paragraph.x.PPr.PStyle = ctStr
+	paragraph.x.PPr.RPr = wml.NewCT_ParaRPr()
+	return paragraph
+}
+
+func (f Footnote) id() int64 {
+	return f.x.IdAttr
+}
